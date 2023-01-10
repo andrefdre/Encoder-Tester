@@ -34,10 +34,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Encoder Tester</h3>
 
   <p align="center">
-    project_description
+    Tester for six channels Encoder with pulses and full rotations as well as channels plotter
     <br />
     <a href="https://github.com/andrefdre/Encoder-Tester"><strong>Explore the docs »</strong></a>
     <br />
@@ -94,13 +94,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 ### Built With
 
 * [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,32 +103,27 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To replicate first wire the components following the wiring diagram presented in the docs folder.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Required components:
+  - Esp32
+  - LCD \verb|nx4827t043_011|
+  - Comparator lm339
+  - Expander Module I/O pcf8574
+  - MH-SD Card Module
+  - Any Encoder
+  - LED
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/andrefdre/Encoder-Tester.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+3. Upload the code to the ESP32
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -143,7 +132,7 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Before using the tool, plug an SD card into its appropriate place, followed by connecting the encoder in question to the tool. After plugging the tool into the computer, it displays all the information to verify the proper working order of the encoder. It is also possible to connect an H-bridge motor control to the equipment using the I/O expander to test a motor moving when the encoder moves. In the end, it is also possible to read all the encoder inputs by opening the text file inside the SD card, allowing the plot of graphs with previously recorded data.
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
